@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="6dp"
+        android:background="@drawable/custom_dialog_bg"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:paddingBottom="20dp" >
+
+        <TextView
+            android:id="@+id/CD_Dialog_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_dialog_title"
+            android:padding="10dp"
+            android:gravity="start"
+            android:textColor="@color/White"
+            android:text=" اكمل الاستلام"
+            android:textSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@android:color/white"
+            android:layout_below="@id/CD_Dialog_title"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/grey_5" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white"
+                android:orientation="vertical"
+                android:padding="@dimen/spacing_middle">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairobold"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="تكلفة الشحن : " />
+
+                <TextView
+                    android:id="@+id/CD_Dialog_ShippingAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairobold"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="0.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairobold"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="تكلفة الطلب : " />
+                <TextView
+                    android:id="@+id/CD_Dialog_OrderAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairobold"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:text="0.0" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairobold"
+                    android:textSize="18dp"
+                    android:textColor="@color/accept"
+                    android:text="المبلغ الإجمالي للطلب : " />
+
+                <TextView
+                    android:id="@+id/CD_Dialog_TotalAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairobold"
+                    android:gravity="center"
+                    android:textSize="18dp"
+                    android:textColor="@color/accept"
+                    android:text="0.0" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"  />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_5" />
+
+
+                <EditText
+                    android:id="@+id/CD_Dialog_ET_PaidAmount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/cairoregular"
+                    android:inputType="numberDecimal"
+                    android:hint=" المبلغ المدفوع "/>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_5" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"  />
+                <Button
+                    android:id="@+id/CD_Dialog_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_rounded_accent"
+                    android:textColor="@color/White"
+                    android:text="تسليم كامل" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp" />
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/grey_5" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/close_button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/custom_dialog_btn_close"
+        android:text="×"
+        android:textColor="@color/colorPrimary" />
+
+
+</RelativeLayout>

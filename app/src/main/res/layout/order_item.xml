@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/cardview_default_radius"
+    android:layout_margin="15dp"
+    android:outlineAmbientShadowColor="@color/black">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="15dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/order_item_TV_from"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/cairoregular"
+                android:text="من : "
+                />
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/transparent"
+                android:src="@drawable/baseline_where_to_vote_black_24"
+                android:tint="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/order_item_TV_to"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="الى :"
+                android:fontFamily="@font/cairoregular"
+                />
+            <ImageButton
+                android:layout_width="50dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/transparent"
+                android:src="@drawable/baseline_person_pin_black_24"
+                android:tint="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:id="@+id/order_item_TV_SOnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="200 ر.س - #SO43014700072061"
+                android:fontFamily="@font/cairoregular"
+                />
+            <ImageButton
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:layout_marginEnd="20dp"
+                android:background="@color/transparent"
+                android:src="@drawable/baseline_attach_money_black_24"
+                android:tint="@color/colorPrimary"
+                />
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:id="@+id/order_item_ll_Pwaiting"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/order_item_BTN_decline"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="الغاء"
+                android:fontFamily="@font/cairoregular"
+                android:textColor="@color/White"
+                android:background="@color/declined"
+                android:visibility="gone"
+                android:layout_weight="0.3"/>
+            <View
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:visibility="gone"/>
+            <Button
+                android:id="@+id/order_item_BTN_accept"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="موافقه"
+                android:fontFamily="@font/cairoregular"
+                android:textColor="@color/White"
+                android:background="@color/accept"
+                android:layout_weight="0.7"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_item_ll_Paccepted"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="horizontal">
+            <Button
+                android:id="@+id/order_item_BTN_continue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="اكمل"
+                android:fontFamily="@font/cairoregular"
+                android:textColor="@color/White"
+                android:background="@color/colorPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

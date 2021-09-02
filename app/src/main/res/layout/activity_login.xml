@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="175dp"
+            android:layout_height="175dp"
+            android:src="@drawable/icluncher"
+            />
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+        <EditText
+            android:id="@+id/ET_UserName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairoregular"
+            android:maxLines="1"
+            android:inputType="text"
+            android:hint="@string/username"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"/>
+        <EditText
+            android:id="@+id/ET_Password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairoregular"
+            android:inputType="textPassword"
+            android:maxLines="1"
+            android:hint="@string/password"/>
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"/>
+        <Button
+            android:id="@+id/btn_Login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/cairoregular"
+            android:text="تسجيل الدخول"/>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
